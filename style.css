@@ -146,6 +146,11 @@ footer p {
 p a {
   text-decoration: none;
 }
+.linkedin {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: tomato;
+}
 
 /* Media start */
 @media (max-width: 909px) {
