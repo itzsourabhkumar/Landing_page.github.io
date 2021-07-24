@@ -49,7 +49,7 @@ a:hover {
 div.main-content {
   height: 90vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../all-images/ganapathy-kumar-L75D18aVal8-unsplash.jpg);
+    url(all-images/ganapathy-kumar-L75D18aVal8-unsplash.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -91,19 +91,19 @@ h2 {
   /* border: 1px solid black; */
 }
 .pic-1 {
-  background-image: url(../all-images/Screenshot-1.png);
+  background-image: url(all-images/Screenshot-1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .pic-2 {
-  background-image: url(../all-images/Screenshot-2.png);
+  background-image: url(all-images/Screenshot-2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 .pic-3 {
-  background-image: url(../all-images/Screenshot-3.png);
+  background-image: url(all-images/Screenshot-3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
