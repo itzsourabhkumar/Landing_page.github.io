@@ -44,7 +44,8 @@ a:hover {
   border: 1px solid white;
   transition: 0.5s;
 }
-.btn {
+.btn,
+.toggle {
   display: none;
 }
 /* MAIN CONTENT CSS*/
@@ -160,6 +161,18 @@ p a {
     padding: 0 0px;
     line-height: 80px;
     color: aqua;
+  }
+  .visible {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    background-color: #34495e;
+  }
+  .toggle ol li {
+    padding: 5px;
+  }
+  .toggle ol li a {
+    color: tomato;
   }
 
   .btn {
