@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="all-images/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="all-images/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="all-images/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../all-images/favicon_io/site.webmanifest" />
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav>
+      <label class="name">@itzSourabhKumar</label>
+      <ul>
+        <a class="btn" href="#">
+          <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+          </svg>
+        </a>
+        <li><a class="navbar active" href="index.html">Home</a></li>
+        <li><a class="navbar" href="#">About</a></li>
+        <li><a class="navbar" href="#">Feedback</a></li>
+      </ul>
+    </nav>
+    <div class="toggle">
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ol>
+    </div>
+    <!-- MAIN OF FEEDBACK FORM-->
+    <main>
+      <form action="" method="post" autocomplete="off" name="google-sheet">
+        <fieldset>
+          <legend>Feedback Form</legend>
+          <label>
+            <p>
+              Name
+              <input
+                type="text"
+                name="Name"
+                required="required"
+                placeholder="User Name"
+              />
+            </p>
+          </label>
+          <label>
+            <p>
+              Email
+              <input
+                type="email"
+                name="Email"
+                required="required"
+                placeholder="Email id"
+              />
+            </p>
+          </label>
+          <label>
+            <p>What do you want?</p>
+            <select name="opinion" required="required">
+              <option value="Default">---Select one option---</option>
+              <option value="Notes">Notes of HTML and CSS</option>
+              <option value="Code">Code of HTML and CSS</option>
+              <option value="Website">
+                Different Types of Website designing
+              </option>
+            </select>
+          </label>
+          <button type="submit">SUBMIT</button>
+        </fieldset>
+      </form>
+    </main>
+    <script src="index.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxo5hLSlV9EdcbSbVmkvzyH7v2y1T-4L1rElmT7JEpJlX0dFwUqiiu8K39t5EBG6rF3/exec";
+
+      const form = document.forms["google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) =>
+            alert("Thanks for Contacting us..! We Will Contact You Soon...")
+          )
+
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
