@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  font-family: montserrat;
+  background-color: #d9bbaf;
+}
+/* NAVBAR CSS */
+nav {
+  height: 80px;
+  width: 100%;
+  background-color: #34495e;
+  display: flex;
+}
+label.name {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  padding: 0 100px;
+  line-height: 80px;
+  flex: 2;
+}
+nav ul {
+  margin-right: 0px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.btn,
+.toggle {
+  display: none;
+}
+
+/* MAIN OF FEEDBACK FORM */
+main {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+form {
+  width: 50%;
+}
+fieldset {
+  border: 0px solid lightcoral;
+  padding: 30px;
+}
+legend {
+  color: #385e0f;
+  font-weight: bolder;
+  font-size: 40px;
+  text-decoration: underline;
+}
+input,
+select {
+  width: 60%;
+  font-size: 30px;
+}
+input {
+  color: #ff8962;
+  font-size: 20px;
+  padding: 5px;
+}
+select {
+  color: #64c2c2;
+}
+label p,
+button {
+  color: #388e8e;
+  margin: 10px;
+  font-size: 30px;
+  padding: 10px;
+}
+button {
+  border-radius: 7px;
+}
+/*  */
+/* Media start */
+@media (max-width: 909px) {
+  /* NAVBAR */
+  nav {
+    height: 100px;
+  }
+  label.name {
+    font-size: 35px;
+    /* font-weight: bold; */
+    padding: 0 0px;
+    line-height: 80px;
+    color: aqua;
+  }
+  .visible {
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    background-color: #34495e;
+  }
+  .toggle ol li {
+    padding: 5px;
+  }
+  .toggle ol li a {
+    color: tomato;
+  }
+  .btn {
+    display: block;
+    margin-top: 15px;
+  }
+  .navbar {
+    display: none;
+  }
+  /* MAIN OF FEEDBACK FORM */
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+  form {
+    width: 90%;
+  }
+  fieldset {
+    padding: 0px;
+  }
+  legend {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  input,
+  select {
+    width: 60%;
+    font-size: 20px;
+  }
+  input {
+    color: #ff8962;
+    font-size: 15px;
+    padding: 5px;
+  }
+  label p,
+  button {
+    margin: 10px;
+    font-size: 20px;
+    padding: 5px;
+  }
+}
