@@ -66,14 +66,14 @@ a:hover {
   align-items: center;
 }
 
-h2.about {
+h2 {
   color: #57e217;
   text-align: center;
   font-size: 600%;
   font-family: "Courier New", Courier, monospace;
   text-decoration: underline;
 }
-div p {
+p {
   margin: 30px;
   font-size: 55px;
   padding: 20px;
@@ -82,41 +82,6 @@ div p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   border-radius: 10px;
-}
-/* footer CSS */
-footer {
-  font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin: 0;
-  width: 100%;
-  background-color: #000;
-  color: #5c5c5c;
-}
-.my-img {
-  clip-path: circle(40% at 50% 40%);
-}
-footer p {
-  padding: 0.5em;
-  text-align: center;
-}
-#footer-ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#footer-ul > li {
-  word-spacing: 0.6em;
-  line-height: 1.5em;
-}
-#footer-ul li a,
-p a {
-  text-decoration: none;
-  color: #fff;
-}
-.linkedin {
-  font-family: "Indie Flower", cursive;
-  font-size: 40px;
-  color: tomato;
 }
 
 @media (max-width: 909px) {
@@ -164,8 +129,5 @@ p a {
     font-size: 30px;
     padding: 20px;
   }
-  /* CSS for footer */
-  #footer-ul {
-    padding-left: 0px;
-  }
 }
+
