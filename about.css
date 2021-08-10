@@ -67,7 +67,8 @@ a:hover {
 }
 
 h2 {
-  color: green;
+  color: #57e217;
+  text-shadow: 3px 3px 10px tomato;
   text-align: center;
   font-size: 600%;
   font-family: "Courier New", Courier, monospace;
@@ -124,10 +125,9 @@ p {
     font-size: 400%;
   }
   p {
-    word-spacing: 10px;
-    margin: 5px 0px;
+    margin: 0px 0px;
     font-size: 10px;
-    padding: 20px;
+    padding: 10px;
   }
 }
 
