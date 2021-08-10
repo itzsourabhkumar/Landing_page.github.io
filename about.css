@@ -121,9 +121,13 @@ p {
     margin: 20px;
   }
   h2 {
-    margin: 10px;
-    font-size: 400%;
-  }
+  color: #57e217;
+  text-shadow: 3px 3px 10px tomato;
+  text-align: center;
+  font-size: 600%;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
+}
   p {
     margin: 0px 0px;
     font-size: 10px;
