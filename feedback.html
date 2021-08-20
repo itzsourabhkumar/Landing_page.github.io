@@ -58,44 +58,55 @@
     <!-- MAIN OF FEEDBACK FORM-->
     <main>
       <form action="" method="post" autocomplete="off" name="google-sheet">
-        <fieldset>
-          <legend>Feedback Form</legend>
-          <label>
-            <p>
-              Name
-              <input
-                type="text"
-                name="Name"
-                required="required"
-                placeholder="User Name"
-              />
-            </p>
-          </label>
-          <label>
-            <p>
-              Email
-              <input
-                type="email"
-                name="Email"
-                required="required"
-                placeholder="Email id"
-              />
-            </p>
-          </label>
-          <label>
-            <p>What do you want?</p>
-            <select name="opinion" required="required">
-              <option value="Default">---Select one option---</option>
-              <option value="Notes">Notes of HTML and CSS</option>
-              <option value="Code">Code of HTML and CSS</option>
-              <option value="Website">
-                Different Types of Website designing
-              </option>
-            </select>
-          </label>
-          <button type="submit">SUBMIT</button>
-        </fieldset>
+        <div class="container">
+          <div class="box-1">
+            <h1 class="heading">
+              Fill Up,
+              <br />
+              Feedback Form
+            </h1>
+            <p class="paragraph">If you are new / <a href="#">Create New</a></p>
+            <div>
+              <p>
+                <input
+                  type="text"
+                  name="Name"
+                  required="required"
+                  class="Username"
+                  placeholder="Username"
+                />
+              </p>
+              <label>
+                <p>
+                  <p class="paragraph">Email</p>
+                  <input
+                    type="email"
+                    name="Email"
+                    required="required"
+                    class="password"
+                    placeholder="Email id"
+                  />
+                </p>
+              </label>
+            </div>
+            <label>
+              <p class="paragraph">What do you want?</p>
+              <select name="opinion" required="required">
+                <option value="Default">---Select one option---</option>
+                <option value="Notes">Notes of HTML and CSS</option>
+                <option value="Code">Code of HTML and CSS</option>
+                <option value="Website">
+                  Different Types of Website designing
+                </option>
+              </select>
+            </label>
+            <button type="submit" class="pushable">
+              <span class="front"> Submit </span>
+            </button>
+          </div>
+        </div>
       </form>
+  
     </main>
     <script src="index.js"></script>
     <script>
