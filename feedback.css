@@ -7,7 +7,7 @@
 }
 body {
   font-family: montserrat;
-  background-color: #d9bbaf;
+  background-color: #120e43;
 }
 /* NAVBAR CSS */
 nav {
@@ -51,46 +51,59 @@ a:hover {
 }
 
 /* MAIN OF FEEDBACK FORM */
-main {
+div.container {
+  margin: 20px;
   display: flex;
   justify-content: center;
-  margin: 50px 0;
 }
-form {
-  width: 50%;
-}
-fieldset {
-  border: 0px solid lightcoral;
-  padding: 30px;
-}
-legend {
-  color: #385e0f;
-  font-weight: bolder;
+h1.heading {
   font-size: 40px;
-  text-decoration: underline;
+  color: #e8bd0d;
+  letter-spacing: 4px;
 }
-input,
-select {
-  width: 60%;
+p.paragraph {
   font-size: 30px;
-}
-input {
-  color: #ff8962;
-  font-size: 20px;
-  padding: 5px;
-}
-select {
-  color: #64c2c2;
-}
-label p,
-button {
-  color: #388e8e;
+  color: #02b290;
   margin: 10px;
-  font-size: 30px;
-  padding: 10px;
 }
-button {
+p a {
+  color: #02daae;
+  text-decoration: none;
+  border-bottom: 2px solid red;
+  letter-spacing: 2px;
+}
+select,
+.Username,
+.password {
+  font-size: 30px;
+  width: 80%;
+  padding: 10px;
   border-radius: 7px;
+  background-color: #edc126;
+  border: 3px inset #edc126;
+  color: #5b54fa;
+}
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  margin: 10px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
 }
 /*  */
 /* Media start */
@@ -126,35 +139,12 @@ button {
     display: none;
   }
   /* MAIN OF FEEDBACK FORM */
-  main {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-  }
-  form {
-    width: 90%;
-  }
-  fieldset {
-    padding: 0px;
-  }
-  legend {
-    font-weight: bolder;
-    font-size: 20px;
-  }
   input,
-  select {
+  .name,
+  .password {
+    font-size: 20px;
     width: 60%;
-    font-size: 20px;
-  }
-  input {
-    color: #ff8962;
-    font-size: 15px;
-    padding: 5px;
-  }
-  label p,
-  button {
-    margin: 10px;
-    font-size: 20px;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 7px;
   }
 }
