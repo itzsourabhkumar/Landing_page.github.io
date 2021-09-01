@@ -1,2 +1,5 @@
-# Landing_page.github.io
-Our Goal for this website is to guide those aspirants who just begin/want to begin their career in frontend web devlopment and developing skills for making different types of webpages. Hope that this site be helpful 
+My First WebDev Big Project
+
+Through this website people take advantage to know the basic of webdev and implement by own , 
+make new projects,and take project ideas and learn how to create a basic HTML page.
+learn and create new Design .
