@@ -1,0 +1,36 @@
+    nav {
+    border: 1px solid black;
+    display: flex;
+}
+
+nav > div {
+    border: 1px solid black;
+    flex-grow: 1;
+}
+.one, .three     {
+    flex-basis: 100px;
+    font-size: 70%;    
+}
+.two {
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 180%;
+    margin-top: 2%;
+    flex-grow: 3;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.two p {
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    margin-left: 10px;
+}
+ 
+.three figcaption {
+    margin-left: 15%;
+}
