@@ -37,8 +37,8 @@ div.three {
 
 }
 div.four {
-    margin-left: 15px;
-    font-size: 60%;
+    margin-left: 10px;
+    font-size: 55%;
 }
 div.five {
     grid-column: 3/-1;
