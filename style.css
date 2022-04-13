@@ -1,247 +1,218 @@
-*,html {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
 }
-/* -------------- START HEADER-------------------- */
-header {
-    margin: 5px 10px 5px 10px;
-    display: grid;
-    grid-template-columns: 110px minmax(100px,1fr) 110px;
-    grid-template-rows: 100px 30px;
-    grid-gap: 5px;
+body {
+  font-family: montserrat;
 }
-
-div.one {
-    background-image: url("PHOTO/FileHandler-new.png");
-    background-position: center;
-    background-size: cover;
-}
-
-div.two {
-    flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 140%;
-    margin-top: 2%;
-    flex-grow: 3;
-    display: flex;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-    p.AICTE {
-    font-size: 60%;
-    font-weight: bold;
-}
-div.three {
-    background-image: url("PHOTO/rec-removebg-preview\ \(1\).png");
-    background-position: center;
-    background-size: cover;
-
-}
-div.four {
-    margin-left: 5px;
-    font-size: 55%;
-    font-weight: bold;
-}
-div.five {
-    grid-column: 3/-1;
-    font-size: 70%;
-    margin-left: 15px;
-    font-weight: bold;
-}
-
-/* -----------media----------------- */
-@media (max-width:900px) {
-    header {
-        grid-template-columns: 40px minmax(100px,1fr) 40px;
-        grid-template-rows: 40px 15px;
-        grid-gap: 0px;
-    }
-    
-    div.one {
-        background-size:contain;
-    }
-    
-    div.two {
-        font-size: 55%;
-    }
-    
-    p.AICTE {
-        font-size: 3px;
-        font-weight: bold;
-    }
-    div.three {
-        background-size:contain;
-    }
-    div.four {
-        font-size: 3px;
-        margin-left: 4px;
-    }
-    div.five {
-        margin-left: 0px;
-        font-size: 5px;
-    }
-        
-} 
-
-/* -------------- END HEADER-------------------- */
-
-
-
-
-
-/* ----------------NAVBAR--------------------- */
+/* NAVBAR CSS */
 nav {
-    background: #FF642B	;
-    padding: 3px 20px;
+  height: 80px;
+  width: 100%;
+  background-color: #34495e;
+  display: flex;
+}
+label.name {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  padding: 0 100px;
+  line-height: 80px;
+  flex: 2;
+}
+nav ul {
+  margin-right: 0px;
+}
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+nav a {
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+a.active,
+a:hover {
+  border: 1px solid white;
+  transition: 0.5s;
+}
+.btn,
+.toggle {
+  display: none;
+}
+/* MAIN CONTENT CSS*/
+div.main-content {
+  height: 40vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(all-images/ganapathy-kumar-L75D18aVal8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+div.main-content > h1 {
+  color: #fff;
+  font-size: 100px;
+}
+
+div.main-content > li {
+  font-family: cursive;
+  padding: 15px;
+  width: 400px;
+  color: #fff;
+  text-shadow: 2px 2px 2px orange;
+  font-size: 50px;
+  border: 1px solid #fff;
+  /* background-image: linear-gradient(to right, red, yellow); */
+}
+
+/* HEADING CSS*/
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+/* DEMO */
+.demo {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap: 5px;
+}
+.demo > div {
+  width: 400px;
+  height: 300px;
+}
+.pic-1 {
+  background-image: url(all-images/Screenshot-1.png);
+}
+.pic-2 {
+  background-image: url(all-images/Screenshot-2.png);
+}
+.pic-3 {
+  background-image: url(all-images/Screenshot-3.png);
+}
+.page {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.page:hover {
+  transform: translateY(-10px);
+}
+/* footer CSS */
+footer {
+  font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: #000;
+  color: #5c5c5c;
+}
+.my-img {
+  clip-path: circle(40% at 50% 40%);
+}
+footer p {
+  padding: 0.5em;
+  text-align: center;
+}
+#footer-ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#footer-ul > li {
+  word-spacing: 0.6em;
+  line-height: 1.5em;
+}
+#footer-ul li a,
+p a {
+  text-decoration: none;
+  color: #fff;
+}
+.linkedin {
+  font-family: "Indie Flower", cursive;
+  font-size: 40px;
+  color: tomato;
+}
+
+/* Media start */
+@media (max-width: 909px) {
+  /* NAVBAR */
+  nav {
+    height: 100px;
   }
-  ul {
-    list-style-type: none;
+  label.name {
+    font-size: 35px;
+    /* font-weight: bold; */
+    padding: 0 0px;
+    line-height: 80px;
+    color: aqua;
   }
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  .logo a:hover {
-    text-decoration: none;
-  }
-  .menu li {
-    font-size: 16px;
-    padding: 15px 5px;
-    white-space: nowrap;
-  }
-  .logo a,
-  .toggle a {
+  .visible {
+    display: block;
     font-size: 20px;
-  }
-  .button.secondary {
-    border-bottom: 1px #444 solid;
-  }
-  
-  /* Mobile menu */
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .toggle {
-    order: 1;
-  }
-  .item.button {
-    order: 2;
-  }
-  .item {
-    width: 100%;
     text-align: center;
-    order: 3;
+    background-color: #34495e;
+  }
+  .toggle ol li {
+    padding: 5px;
+  }
+  .toggle ol li a {
+    color: tomato;
+  }
+  .btn {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .navbar {
     display: none;
   }
-  .item.active {
-    display: block;
+  /* MAIN CONTENT */
+  div.main-content {
+    height: 50vh;
   }
-  
-  /* Navbar Toggle */
-  .toggle {
-    cursor:pointer;
+  div.main-content > h1 {
+    color: #fff;
+    font-size: 400%;
   }
-  .bars {
-    background: #999;
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  .bars:before,
-  .bars:after {
-    background: #999;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
+
+  div.main-content > li {
     width: 100%;
+    border-width: 0px;
   }
-  .bars:before {
-    top: 5px;
+
+  /* DEMO */
+  .demo {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  .bars:after {
-    top: -5px;
+  .demo > div {
+    width: 100%;
+    height: 300px;
   }
-  
-  /* Tablet menu */
-  @media all and (min-width: 468px) {
-    .menu {
-        justify-content: center;
-    }
-  
-    .logo {
-        flex: 1;
-    }
-  
-    .item.button {
-        width: auto;
-        order: 1;
-        display: block;
-    }
-    .toggle {
-        order: 2;
-    }
-    .button.secondary {
-        border: 0;
-    }
-    .button a {
-        padding: 7.5px 15px;
-        background: teal;
-        border: 1px #006d6d solid;
-        border-radius:50em;
-    }
-    .button.secondary a {
-        background: transparent;    
-    }
-    .button a:hover {
-        text-decoration: none;
-        transition:all .25s;
-    }
-    .button:not(.secondary) a:hover {
-        background: #006d6d;
-        border-color: #005959;
-    }
-    .button.secondary a:hover {
-        color: #ddd;
-    } 
+  .page {
+    text-align: center;
   }
-  
-  /* Desktop menu */
-  @media all and (min-width: 768px) {
-    .item {
-        display: block;
-        width: auto;
-    }
-    .toggle {
-        display: none;
-    }
-    .logo {
-        order: 0;
-    }
-    .item {
-        order: 1;
-    }
-    .button {
-        order: 2;
-    }
-    .menu li {
-        padding: 15px 10px;
-    }
-    .menu li.button {
-        padding-right: 0;
-    }
+  /* CSS for footer */
+  #footer-ul {
+    padding-left: 0px;
   }
+}
