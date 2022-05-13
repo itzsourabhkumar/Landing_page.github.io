@@ -678,7 +678,7 @@ div.about p {
 
 
  
- @media (max-width: 500px){
+ @media (max-width: 600px){
  
   .header {
     max-width: 904px;
@@ -690,6 +690,7 @@ div.about p {
  
 .imagegroup img {
   width: 100px;
+  padding: 2px;
   height: 80px;
 }
 
