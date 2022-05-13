@@ -1,3 +1,14 @@
+/* ===================================================== */
+/* --------------------GOOGLE FONTS----------------  */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! END OF GOOGLE FONT'S !!!!!!!!!!!!!!!!!!!*/
+/* ===================================================== */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -103,7 +114,7 @@ div.five {
 /* ----------------NAVBAR START--------------------- */
 nav {
   background: #FF642B	;
-  padding: 3px 20px;
+  padding: 1px 20px;
 }
 ul {
   list-style-type: none;
@@ -431,12 +442,17 @@ div.welcome h1 {
 div.about {
   margin: 10px;
   font-family:'Times New Roman', Times, serif;
-  text-shadow: 1px 1px  #222;
+  /* text-shadow: 1px 1px  #222; */
 }
 
 div.about h1 {
   text-align: center;
   color: #005959;
+}
+
+div.about p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
 }
 
 @media (max-width: 500px) {
@@ -595,6 +611,237 @@ div.about h1 {
 }
 
 
-/*!!!!!!!!!!!!!!!!!!!! PHOTO GRID footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
+/*!!!!!!!!!!!!!!!!!!!! PHOTO GRID footer!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
 /* ===================================================== */
+
+
+
+
+
+
+
+
+/* ===================================================== */
+/* -----------------------Our Recruiters start -------------------------*/
+
+
+
+
+
+.header {
+   max-width: 1024px;
+   width: 100%;
+   margin: 15px 200px;
+   /* margin-left: 200px;
+   margin-right: 200px; */
+   overflow: hidden;
+   border: 1px solid black;
+  }
+
+.row {
+   display: flex;
+   overflow: hidden;
+  }
+
+.imagegroup {
+   display: flex;
+   width: 100%;
+  }
+
+.imagegroup img{
+/*   margin-left: 10px; */
+  flex-shrink: 0;
+  object-fit:contain;
+  border: 3px solid white;
+}
+
+.imagegroup {
+   animation: travel 20s ease-in-out infinite;
+  }
+
+  .imagegroup img {
+    width: 250px;
+    height: 100px;
+
+  }
+
+@keyframes travel {
+   0%, 100% {
+      transform: translate3d(0,0,0);
+    }
+   50% {
+      transform: translate3d(-100%,0,0);
+    }
+ }
+
+
+ 
+@media all and (min-width: 468px) {
+
+.header {
+ margin-left: 0px;
+}
+
+}
+
+
+ 
+ @media (max-width: 500px){
+ 
+  .header {
+    max-width: 904px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*overflow: hidden; */
+   }
+ 
+.imagegroup img {
+  width: 100px;
+  height: 80px;
+}
+
+}
+     
+
+
+
+
+
+
+/*!!!!!!!!!!!!!!!!!!!! Our  Recruiters end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
+/* ===================================================== */
+
+
+
+
+
+
+
+
+/* ===================================================== */
+/* -----------------------footer start -------------------------*/
+
+
+/* body{
+background: #fcfcfc;
+font-family: sans-serif;
+} */
+footer{
+/*   */
+/* bottom: 0; */
+/* left: 0;
+right: 0; */
+background: #111;
+height: auto;
+/* width: 100vw; */
+
+padding-top: 40px;
+color: #fff;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content h3{
+font-size: 2.1rem;
+font-weight: 500;
+text-transform: capitalize;
+line-height: 3rem;
+}
+.footer-content p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 14px;
+color: #cacdd2;
+}
+.socials{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+.socials li{
+margin: 0 10px;
+}
+.socials a{
+text-decoration: none;
+color: #fff;
+border: 1.1px solid white;
+padding: 5px;
+
+border-radius: 50%;
+
+}
+.socials a i{
+font-size: 1.1rem;
+width: 20px;
+
+
+transition: color .4s ease;
+
+}
+.socials a:hover i{
+color: aqua;
+}
+
+.footer-bottom{
+background: #000;
+/*  width: 100vw; */
+padding: 20px;
+padding-bottom: 40px;
+text-align: center;
+}
+.footer-bottom p{
+float: left;
+font-size: 14px;
+word-spacing: 2px;
+text-transform: capitalize;
+}
+.footer-bottom p a{
+color:#44bae8;
+font-size: 16px;
+text-decoration: none;
+}
+.footer-bottom span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200;
+}
+.footer-menu{
+float: right;
+
+}
+.footer-menu ul{
+display: flex;
+}
+.footer-menu ul li{
+/* padding-right: 10px; */
+display: block;
+}
+.footer-menu ul li a{
+color: #cfd2d6;
+text-decoration: none;
+}
+.footer-menu ul li a:hover{
+color: #27bcda;
+}
+
+@media (max-width:500px) {
+.footer-menu ul{
+display: flex;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+}
+
+/*!!!!!!!!!!!!!!!!!!!! footer end!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  */
+/* ===================================================== */
+
+
 
