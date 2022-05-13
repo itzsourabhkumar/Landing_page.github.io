@@ -1,3 +1,14 @@
+/* ===================================================== */
+/* --------------------GOOGLE FONTS----------------  */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! END OF GOOGLE FONT'S !!!!!!!!!!!!!!!!!!!*/
+/* ===================================================== */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -431,12 +442,17 @@ div.welcome h1 {
 div.about {
   margin: 10px;
   font-family:'Times New Roman', Times, serif;
-  text-shadow: 1px 1px  #222;
+  /* text-shadow: 1px 1px  #222; */
 }
 
 div.about h1 {
   text-align: center;
   color: #005959;
+}
+
+div.about p {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 20px;
 }
 
 @media (max-width: 500px) {
@@ -657,6 +673,17 @@ div.about h1 {
       transform: translate3d(-100%,0,0);
     }
  }
+
+
+ 
+@media all and (min-width: 468px) {
+
+.header {
+ margin-left: 0px;
+}
+
+}
+
 
  
  @media (max-width: 500px){
