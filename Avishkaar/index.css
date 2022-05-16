@@ -304,8 +304,8 @@ a:hover {
 
 .slider .slide .info{
   position: absolute;
-  color: rgb(29, 217, 158);
-  background: rgba(68, 79, 67, 0.644);
+  color: black;
+  background: rgba(128, 128, 128, 0.525);
   width: 75%;
   margin-top: 17%;
   margin-left: 50px;
@@ -498,6 +498,9 @@ div.about h1 {
   font-weight: bold;
   font-style: normal;
 }
+
+
+
 .title p {
   color: rgb(160, 160, 160);
   letter-spacing: 2px;
@@ -547,7 +550,7 @@ div.about h1 {
   font-size: 25px;
   letter-spacing: 2px;
 /*   text-transform: lowercase; */
-  color: #cacacab9;
+  color:  white;
   font-weight: normal;
 }
 .profile p {
